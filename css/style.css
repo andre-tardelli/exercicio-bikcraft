@@ -1,5 +1,7 @@
 /* Global */
 @import "./global/global.css";
+@import "./utilidades/tipogafica.css";
+@import "./utilidades/cores.css";
 @import "./global/header.css";
 
 /* Home */
