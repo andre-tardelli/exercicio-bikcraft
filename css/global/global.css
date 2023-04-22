@@ -1,3 +1,5 @@
+/* Configurações padrões e resetes. */
+
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,6 +8,9 @@ body {
 }
 
 h1,
+h2,
+h3,
+h4,
 ul,
 p {
     margin: 0px;
@@ -24,4 +29,9 @@ a {
 img {
     max-width: 100%;
     display: block;
+}
+
+/* Seletor de atributo. Foi selecionado o src com a palavra especípica ".jpg". Isso foi possível através da inclusão do $ e foi necessário para que o estilo não seja aplicado em img SVG Então, tudo que terminar com .jpg, aplique esse estilo aqui */
+img[src$=".jpg"] {
+    border-radius: 4px;
 }

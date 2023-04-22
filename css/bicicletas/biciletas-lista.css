@@ -1,0 +1,77 @@
+.bicicletas-lista {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.bicicletas-lista h2 {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Configuração que tem sido usada como padrão para itens de lista */
+.bicicletas-lista ul {
+    display: flex;
+    gap: 40px;
+    padding: 0 20px 20px 20px;
+    /* Limita o crescimento dos itens, sendo assim, será preciso incluir margin left e right "auto" */
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto; /* Criação da barra de rolagem dos elementos específicos. Sem comprometer o restante do projeto */
+}
+
+.bicicletas-lista li {
+    flex: 1;
+    min-width: 280px; /* Usado para limitar o tamanho mínimo dos elementos. Isso vai fazer com que seja gerado uma barra de rolagem, que foi resolvido com o overflow no elemento pai */
+}
+
+.bicicletas-lista a {
+    display: block; /* Por padrão, o A é um display inline e como ele está envolvendo vários elementos, eles acabam não ficando em bloco, por isso foi transformado em display block*/    
+}
+
+.bicicletas-lista img {
+    margin-bottom: 16px;
+}
+
+.bicicletas-lista h3 {
+    margin-bottom: 8px;
+
+    /* Inserido para centralizar o pseudo elemento */
+    display: flex; 
+    align-items: center;
+}
+
+/* Código para pseudo elemento - Detalhe no nome das bicicletas*/
+.bicicletas-lista h3::before {
+    content: "";
+    display: inline-block;
+    background-color: var(--cor-p1);
+    width: 12px;
+    height: 8px;    
+    margin-right: 8px;  
+    transition: width 0.2s;
+}
+
+.bicicletas-lista a:hover h3::before { /* Animação para destacar que o elemento é clicável. */
+    width: 24px;
+}
+
+/* Alinhando o preço ao h3 */
+.bicicletas-lista li span {
+    padding-left: 20px; /* Soma do width (12px) + margin-right (8px) */
+}
+
+@media (max-width: 800px) {
+    .bicicletas-lista {
+        padding-bottom: 60px;
+    }
+
+    .bicicletas-lista ul {
+        gap: 20px;
+    }
+}
