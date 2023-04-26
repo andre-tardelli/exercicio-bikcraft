@@ -1,0 +1,23 @@
+.tecnologia-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0px 80px blue, inset 0px -80px blue;
+
+}
+
+.tecnologia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tecnologia-imagem img { 
+    height: 100%;/* Para a img ter sempre a altura máxima do conteúdo, isso gera um problema, que é a foto distorcer (Podemos usar o object-fit: cover*/
+    object-fit: cover; /* Nâo vai deixar a foto distorcer, mas vai começar a cortar a foto. Podemos, então, ajustar com o object-position: left*/
+    object-position: left; /* Alinha o objeto a esquerda */
+    width: 100%;
+}
+
+.tecnologia-conteudo {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
