@@ -1,0 +1,26 @@
+.parceiros {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.parceiros h2 {
+    margin-bottom: 60px;
+}
+
+.parceiros ul {
+    padding: 0 20px;
+    max-width: 1400px; /* Vai fazer com que o conteúdo vase o conteiner */
+    margin: 0 auto; /* Para cima e para baixo 0, para um lado e para o outro auto */
+    display: grid; /* Caso fosse usado o display flex, o conteúdo não ficaria alinhados. Eles ficariam alinhados conforme o tamanho */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.parceiros li {
+    display: flex; /* Transformado em display grid para poder alinhar as imagens */
+    padding: 32px;
+    border: 2px solid var(--cor-2);
+}
+
+.parceiros img {
+    margin: auto;
+}
