@@ -28,10 +28,40 @@
 
 .seguros-item span {
     grid-column: 2;
+    display: block;
+    text-align: right;
 }
 
 .seguros-item ul {
     grid-column: 1/-1;
     margin-bottom: 16px;
+    display: relative;
 }
 
+.seguros-item li + li{
+    margin-top: 20px;
+}
+
+.seguros-item a {
+    grid-column: 1/-1;
+}
+
+.seguros-item li::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 9px;
+    background-image: url(../../img/icones/lista.svg);
+    position: absolute;
+    left: -21px;
+}
+
+.seguros-item li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    
+}
