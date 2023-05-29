@@ -16,7 +16,7 @@
     text-transform: uppercase;
     color: var(--cor-p5);
     font: 600 1.125rem/1.35 "Poppins", sans-serif;
-    max-width: max-content; /* O conteúdo crsce ao máximo do seu conteúdo */
+    max-width: max-content; /* O conteúdo cresce ao máximo do seu conteúdo */
 }
 
 .botao.secundario {
