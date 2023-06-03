@@ -1,0 +1,26 @@
+.bicicletas-bg {
+  background-color: var(--cor-11);
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.bicicletas-imagem {
+  display: grid;
+}
+
+.bicicletas-imagem img {
+  grid-area: 1/1;
+}
+
+.bicicletas span {
+  place-self: start end;
+  grid-area: 1/1;
+  background-color: var(--cor-12);
+  padding: 8px 16px 8px 8px;
+  display: inline-block;
+}
