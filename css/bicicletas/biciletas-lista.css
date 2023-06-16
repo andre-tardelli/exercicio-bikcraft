@@ -19,6 +19,10 @@
     overflow-x: auto; /* Criação da barra de rolagem dos elementos específicos. Sem comprometer o restante do projeto */
 }
 
+#bicicleta .bicicletas-lista ul {
+    padding: 0px 0px 20px 0px;
+}
+
 .bicicletas-lista li {
     flex: 1;
     min-width: 280px; /* Usado para limitar o tamanho mínimo dos elementos. Isso vai fazer com que seja gerado uma barra de rolagem, que foi resolvido com o overflow no elemento pai */
