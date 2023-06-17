@@ -19,6 +19,9 @@
     grid-column: 1/-1;
 }
 
+#seguros .seguros {
+    padding-top: 0;
+}
 .seguros-item {
     background-color: var(--cor-12);
     padding: 32px 32px 32px 60px;

@@ -3,11 +3,8 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: 40px;
-  padding: 60px 0;
-}
-
-#bicicleta .titulo p {
-  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .bicicletas-imagens {
@@ -35,6 +32,7 @@
   align-items: center;
   justify-items: start;
   gap:8px 12px;
+  margin-bottom: 40px;
 }
 
 .bicicleta-comprar a {
